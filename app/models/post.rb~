@@ -1,6 +1,0 @@
-class Post < ActiveRecord::Base
-  has_many :categorizations
-  has_many :categories, :through => :categorizations
-  attr_accessible :text, :title
-
-end
