@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lone Yeti Blog</title>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<!-- Skin CSS file -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/assets/skins/sam/skin.css">
+<!-- Utility Dependencies -->
+<script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+<script src="http://yui.yahooapis.com/2.9.0/build/element/element-min.js"></script> 
+<!-- Needed for Menus, Buttons and Overlays used in the Toolbar -->
+<script src="http://yui.yahooapis.com/2.9.0/build/container/container_core-min.js"></script>
+<script src="http://yui.yahooapis.com/2.9.0/build/menu/menu-min.js"></script>
+<script src="http://yui.yahooapis.com/2.9.0/build/button/button-min.js"></script>
+<!-- Source file for Rich Text Editor-->
+<script src="http://yui.yahooapis.com/2.9.0/build/editor/editor-min.js"></script>
+
+</head>
+<body>
+  <div id="leftside">
+  <header>
+    <h1><a href="http://loneyeti.com">Lone Yeti</a></h1>
+    <h6>An iOS Developer's Blog<h6>
+  </header>
+  <aside class="sidebar">
+    <ul class="side-first">
+      <li><h3>Apps</h3>
+        <ul class="side-second">
+          <li class="ad">
+	    <a href="http://loneyeti.com/songsmith"><img src="http://loneyeti.com/songsmith/images/web-ad.png"><br/>
+             <span class="ad-title">Songsmith</span><br/><span class="ad-slogan">A Songwriter's Journal for iPhone</span></a>
+          </li>
+        </ul>
+      </li>
+      <li><h3>Twitter: <a href="https://twitter.com/LoneYeti">@loneyeti</a><h3></li>
+    </ul>
+  </aside>
+  </div>
+  <div id="content">
+<%= yield %>
+  </div>
+</body>
+</html>

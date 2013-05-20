@@ -1,0 +1,288 @@
+body {
+/*  font-family: "Colaborate", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif;*/
+font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+div#container {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../images/songsmith-header-short2.png);
+  height: 460px;
+}
+
+header div#appstore {
+  position: relative;
+  width: 351;
+  height: 141;
+  top: 250px;
+  left: 600px;
+}
+
+header div#appstore a img {
+  border: 0;
+}
+
+nav {
+  height: 80px;
+  background-color: black;
+}
+
+#navContainer {
+  width: 1000px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+nav ul {
+  margin: 0;
+  padding-top: 30px;
+}
+
+nav ul li {
+  display: block;
+  vertical-align: middle;
+  float: left;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+article {
+  padding: 20px;
+  background-image: url(../images/songsmith-background2.png);
+}
+
+img#screenshots {
+  float:right;
+  margin: -50px 10px 10px 20px;
+}
+
+span.feature {
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
+footer {
+  background-image: url(../images/songsmith-footer.png);
+  height: 90px;
+}
+
+div#support {
+  border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+div#support form table th {
+  font-size: 1.3em;
+  color: white;
+}
+
+div#support form input[type=text]{
+  width: 300px;
+  font-size: 1.3em;
+
+}
+
+div#support form textarea {
+  width: 300px;
+  height: 250px;
+}
+
+.afs-colaborate { font-family: "Colaborate", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif;}
+
+.afs-colaborate { font-family: "Colaborate", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; font-size: 1.000em;}
+
+.afs-colaborate { font-family: "Colaborate", "Helvetica", "Arial", "Lucida Grande", "Gill Sans", "Verdana", sans-serif; font-size: 1.000em;}
+
+.afs-lekton { font-family: "Lekton", Menlo, Courier New, Courier, Mono, monospace; font-size: 0.962em;}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabBol-webfont.eot');
+src: local('☺'), url('/fonts/ColabBol-webfont.woff') format('woff'), url('/fonts/ColabBol-webfont.ttf') format('truetype'), url('/fonts/ColabBol-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabMed-webfont.eot');
+src: local('☺'), url('/fonts/ColabMed-webfont.woff') format('woff'), url('/fonts/ColabMed-webfont.ttf') format('truetype'), url('/fonts/ColabMed-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabReg-webfont.eot');
+src: local('☺'), url('/fonts/ColabReg-webfont.woff') format('woff'), url('/fonts/ColabReg-webfont.ttf') format('truetype'), url('/fonts/ColabReg-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabThi-webfont.eot');
+src: local('☺'), url('/fonts/ColabThi-webfont.woff') format('woff'), url('/fonts/ColabThi-webfont.ttf') format('truetype'), url('/fonts/ColabThi-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabLig-webfont.eot');
+src: local('☺'), url('/fonts/ColabLig-webfont.woff') format('woff'), url('/fonts/ColabLig-webfont.ttf') format('truetype'), url('/fonts/ColabLig-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 200;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabBol-webfont.eot');
+src: local('☺'), url('/fonts/ColabBol-webfont.woff') format('woff'), url('/fonts/ColabBol-webfont.ttf') format('truetype'), url('/fonts/ColabBol-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabMed-webfont.eot');
+src: local('☺'), url('/fonts/ColabMed-webfont.woff') format('woff'), url('/fonts/ColabMed-webfont.ttf') format('truetype'), url('/fonts/ColabMed-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabReg-webfont.eot');
+src: local('☺'), url('/fonts/ColabReg-webfont.woff') format('woff'), url('/fonts/ColabReg-webfont.ttf') format('truetype'), url('/fonts/ColabReg-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabThi-webfont.eot');
+src: local('☺'), url('/fonts/ColabThi-webfont.woff') format('woff'), url('/fonts/ColabThi-webfont.ttf') format('truetype'), url('/fonts/ColabThi-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabLig-webfont.eot');
+src: local('☺'), url('/fonts/ColabLig-webfont.woff') format('woff'), url('/fonts/ColabLig-webfont.ttf') format('truetype'), url('/fonts/ColabLig-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 200;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabBol-webfont.eot');
+src: local('☺'), url('/fonts/ColabBol-webfont.woff') format('woff'), url('/fonts/ColabBol-webfont.ttf') format('truetype'), url('/fonts/ColabBol-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabMed-webfont.eot');
+src: local('☺'), url('/fonts/ColabMed-webfont.woff') format('woff'), url('/fonts/ColabMed-webfont.ttf') format('truetype'), url('/fonts/ColabMed-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 500;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabReg-webfont.eot');
+src: local('☺'), url('/fonts/ColabReg-webfont.woff') format('woff'), url('/fonts/ColabReg-webfont.ttf') format('truetype'), url('/fonts/ColabReg-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabThi-webfont.eot');
+src: local('☺'), url('/fonts/ColabThi-webfont.woff') format('woff'), url('/fonts/ColabThi-webfont.ttf') format('truetype'), url('/fonts/ColabThi-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Colaborate';
+src: url('/fonts/ColabLig-webfont.eot');
+src: local('☺'), url('/fonts/ColabLig-webfont.woff') format('woff'), url('/fonts/ColabLig-webfont.ttf') format('truetype'), url('/fonts/ColabLig-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 200;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'Lekton';
+src: url('/fonts/Lekton-Bold-webfont.eot');
+src: local('☺'), url('/fonts/Lekton-Bold-webfont.woff') format('woff'), url('/fonts/Lekton-Bold-webfont.ttf') format('truetype'), url('/fonts/Lekton-Bold-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Lekton';
+src: url('/fonts/Lekton-Italic-webfont.eot');
+src: local('☺'), url('/fonts/Lekton-Italic-webfont.woff') format('woff'), url('/fonts/Lekton-Italic-webfont.ttf') format('truetype'), url('/fonts/Lekton-Italic-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: 'Lekton';
+src: url('/fonts/Lekton-Regular-webfont.eot');
+src: local('☺'), url('/fonts/Lekton-Regular-webfont.woff') format('woff'), url('/fonts/Lekton-Regular-webfont.ttf') format('truetype'), url('/fonts/Lekton-Regular-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}

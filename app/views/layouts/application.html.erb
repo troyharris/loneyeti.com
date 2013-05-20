@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lone Yeti Blog - <%= yield :title %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<!-- Skin CSS file -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/assets/skins/sam/skin.css">
+<!-- Utility Dependencies -->
+<script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+<script src="http://yui.yahooapis.com/2.9.0/build/element/element-min.js"></script> 
+<!-- Needed for Menus, Buttons and Overlays used in the Toolbar -->
+<script src="http://yui.yahooapis.com/2.9.0/build/container/container_core-min.js"></script>
+<script src="http://yui.yahooapis.com/2.9.0/build/menu/menu-min.js"></script>
+<script src="http://yui.yahooapis.com/2.9.0/build/button/button-min.js"></script>
+<!-- Source file for Rich Text Editor-->
+<script src="http://yui.yahooapis.com/2.9.0/build/editor/editor-min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33863649-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".rounded-img, .rounded-img2").load(function() {
+		$(this).wrap(function(){
+			return '<span class="' + $(this).attr('class') + '" style="background:url(' + $(this).attr('src') + ') no-repeat center center; width: ' + $(this).width() + 'px; height: ' + $(this).height() + 'px;" />';
+		});
+		$(this).css("opacity","0");
+	});
+
+});
+</script>
+</head>
+<body>
+<div id="social">
+  <a href="https://github.com/troyharris/"><img src="/assets/github_alt.png"/></a>
+  <a href="https://twitter.com/loneyeti"><img src="/assets/twitter_alt.png"/></a>
+  <a href="http://itunes.apple.com/us/artist/lone-yeti/id548961576"><img src="/assets/app_store.png"/></a>
+</div>
+<header>
+    <div id="logo">
+      <h1><a href="http://loneyeti.com">[[LoneYeti alloc] init]</a></h1>
+      <h4>the projects of troy harris</h4>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">blog</a></li>
+        <li><a href="/music">music</a></li>
+        <li><a href="/apps">mobile apps</a></li>
+        <li><a href="/fiction">fiction</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="clear"/>
+ <hr class="head"/>
+<div id="contain">
+<%= yield %>
+  </div>
+</body>
+</html>

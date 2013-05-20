@@ -1,0 +1,11 @@
+<div id="loop">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h2 class="title"><%= post.title %></h2>
+      <span class="date"><%= l post.created_at, :format => :long_datetime %></span>
+      <p><%= raw(post.text) %></p>
+      <%= link_to 'Edit', :action => :edit, :id => post.id %> 
+      <%= link_to 'Delete', { :action => :destroy, :id => post.id }, :method => :delete, :data => { :confirm => "Are you sure?" } %>
+    </div>
+  <% end %>
+</div>

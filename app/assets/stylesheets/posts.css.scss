@@ -1,0 +1,213 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$bigTextColor: #1a2e42;
+$smallTextColor: #192921;
+$linkTextColor: #09b;
+$backgroundColor: #f5fff9;
+
+html {
+//  -webkit-font-smoothing: antialiased;
+}
+
+body {
+//  margin: 0;
+//  text-shadow: 0 1px 1px rgba(240,250, 255, .2);
+  color: $smallTextColor;
+  font: {
+    family: Didot, "Didot LT STD", "Hoefler Text", Georgia, "Century Schoolbook", Utopia, Times, "Times New Roman", serif;
+  }
+  p {
+    line-height: 1.5em;
+  }
+  background-color: $backgroundColor;
+}
+
+
+
+a {
+ text-decoration: none;
+ color: $linkTextColor;
+ font-weight: bold;
+}
+
+#contain, header {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#logo {
+  float: left;
+}
+
+#logo h1 {
+  margin: 1em 0 0 0;
+  font-size: 1.5em;
+  font-family: Menlo, Monaco, Andale Mono, Consolas, "Courier New", Courier, monospaced;
+}
+
+#logo h4 {
+  margin: 0;  
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    margin: 3em 0 1em 4em;
+    font-size: 1.1em;
+}
+
+div#social {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 300px;
+ height: 32px;
+}
+
+div#social img {
+  margin-left: 60px;
+  opacity:0.4;
+filter:alpha(opacity=40);
+  border: 0;
+}
+
+hr.head {
+    padding: 0;
+    border: none;
+    border-top: medium double $bigTextColor;
+    color: #333;
+    text-align: center;
+}
+hr.head:after {
+  content: "{ }";
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background-color: $backgroundColor;
+}
+
+
+
+#clear {
+  clear:both;
+}
+
+div.clear {
+  clear: both;
+}
+
+div.theloop {
+  float: left;
+  width: 100%;
+  line-height: 1.45em;
+  margin: 2em;
+  h2 {
+  font-size: 1.6;
+  }
+
+  h3 {
+    font-size: 1.4;
+  }
+
+  ul {
+	list-style: none;
+ 	li {
+		padding: 8px 8px;
+		margin: 0;
+		// border-left: 1px solid #99a0b0;
+	}
+	li:before {
+		content: "#";
+		font-size: 0.75em;
+		padding-right: 10px;
+		float: left;
+		color: #b1b5bf;
+	}
+
+  }
+}
+
+.post {
+  width: 37em;
+  float: left;
+}
+
+.pagetitle {
+  text-align: left;
+  font-size: 4em;
+  color: #99a0b0;
+  margin: 0;
+
+}
+
+h2.title {
+  font-size: 1.8em; 
+  margin-bottom: 1.2em;
+  a {
+    color: $bigTextColor;
+  }
+}
+
+span.date {
+  font-style: italic;
+  margin: 0;
+}
+
+aside {
+  width: 15em;
+  float: right;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside ul li {
+  height: 2em;
+}
+
+hr.article {
+  height: 1px; 
+  border-top-style: dotted;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #99a0b0;
+}
+
+pre.code {
+  font-family: Menlo, Monaco, Andale Mono, Consolas, "Courier New", Courier, monospaced;
+  font-size: 0.75em;
+background-color: #d2fee3;
+  padding: 2.0em;  
+  color: #213b54;
+}
+
+span.quote {
+  display: block;
+  float: left;
+  width: 8.0em;
+  font-size: 2.0em;
+  color: #87a3bf;
+  line-height: 1.2em;
+  padding: 1em;
+}
+
+
+
+p.postfoot {
+  font-size: 0.75em;
+  padding-left: 1.0em;
+  color: #99a0b0;
+}

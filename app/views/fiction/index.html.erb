@@ -1,0 +1,11 @@
+  <h1 class="pagetitle">fiction</h1>
+  <hr class="article" />
+
+<% @fiction.each do |fiction| %>
+<div class="projects">
+
+    <img class="rounded-img" src="<%= fiction.imagePath %>"/>
+    <h1><a href="<%= fiction.externalLink %>"><%= fiction.name %></a></h1>
+    <%= fiction.description.html_safe %>
+</div>
+<% end %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @fiction.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @fiction.description %>
+</p>
+
+<p>
+  <b>Imagepath:</b>
+  <%= @fiction.imagePath %>
+</p>
+
+<p>
+  <b>Externallink:</b>
+  <%= @fiction.externalLink %>
+</p>
+
+
+<%= link_to 'Edit', edit_fiction_path(@fiction) %> |
+<%= link_to 'Back', fiction_index_path %>

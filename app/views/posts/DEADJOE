@@ -1,0 +1,33 @@
+
+*** These modified files were found in JOE when it aborted on Tue Aug  7 10:09:03 2012
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+_form.html.erb
+
+*** File '_form.html.erb'
+  <p>
+    <%= f.label :title %><br/>
+    <%= f.text_field :title %>
+  </p>
+  
+  <p>
+    <%= f.label :text %><br/>
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<script>
+var myEditor = new YAHOO.widget.Editor('post_text', {
+    height: '300px',
+    width: '900px',
+    dompath: true, //Turns on the bar at the bottom
+    animate: true, //Animates the opening, closing and moving of Editor windows
+    handleSubmit: true
+});
+myEditor.render();
+</script>
+
+<% end %>
+</div>

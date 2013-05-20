@@ -1,0 +1,33 @@
+<%= form_for(@fiction) do |f| %>
+  <% if @fiction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fiction.errors.count, "error") %> prohibited this fiction from being saved:</h2>
+
+      <ul>
+      <% @fiction.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :imagePath %><br />
+    <%= f.text_field :imagePath %>
+  </div>
+  <div class="field">
+    <%= f.label :externalLink %><br />
+    <%= f.text_field :externalLink %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
